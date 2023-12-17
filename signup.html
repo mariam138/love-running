@@ -1,68 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta tags for search engines-->
-    <meta name="description"
-        content="Love Running. Club for runners in Dublin, Ireland. Urban running, trail running. Dublin docklands and Phoenix Park">
-    <meta name="keywords" content="love running, run, running club, runners, Ireland, Dublin, sport, exercise">
+    <meta
+      name="description"
+      content="Love Running. Club for runners in Dublin, Ireland. Urban running, trail running. Dublin docklands and Phoenix Park"
+    />
+    <meta
+      name="keywords"
+      content="love running, run, running club, runners, Ireland, Dublin, sport, exercise"
+    />
     <title>Love Running</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-zip/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-zip/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-zip/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon-zip/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-zip/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-zip/favicon-16x16.png"
+    />
 
     <!--Stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!--Header for Love Running-->
     <header>
-        <a href="index.html">
-            <h1 id="logo">Love Running</h1>
-        </a>
-        <input type="checkbox" id="nav-toggle" name="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="signup.html" class="active">Sign Up</a></li>
-            </ul>
-        </nav>
+      <a href="index.html">
+        <h1 id="logo">Love Running</h1>
+      </a>
+      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="signup.html" class="active">Sign Up</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--Main Content for Love Running-->
-    <main>Main Content</main>
+    <main>
+      <section id="signup">
+        <form
+          action="https://formdump.codeinstitute.net"
+          method="POST"
+          id="signup-form"
+        >
+          <h2>
+            <i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!
+          </h2>
+
+          <label for="first_name">First Name</label>
+          <input
+            type="text"
+            required
+            id="first_name"
+            name="first_name"
+            class="text-input"
+          />
+          <br />
+          <label for="last_name">Last Name</label>
+          <input
+            type="text"
+            required
+            id="last_name"
+            name="last_name"
+            class="text-input"
+          />
+          <br />
+          <label for="email_address">Email Address</label>
+          <input
+            type="email"
+            required
+            id="email_address"
+            name="email_address"
+            class="text-input"
+          />
+          <br />
+
+          <div class="radio-buttons">
+            <div>
+              <label for="road">Road</label>
+              <input
+                type="radio"
+                id="road"
+                name="running-preference"
+                value="road"
+                required
+                checked
+              />
+            </div>
+            <div>
+              <label for="trail">Trail</label>
+              <input
+                type="radio"
+                id="trail"
+                name="running-preference"
+                value="trail"
+                required
+              />
+            </div>
+            <div>
+              <label for="both">Both</label>
+              <input
+                type="radio"
+                id="both"
+                name="running-preference"
+                value="both"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="join-button">Let's Run! </button> 
+        </form>
+      </section>
+    </main>
 
     <!--Footer for Love Running-->
     <footer>
-        <ul id="social-networks">
-            <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i
-                        class="fa-brands fa-instagram"></i></a>
-            </li>
-        </ul>
+      <ul id="social-networks">
+        <li>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Facebook page (opens in a new tab)"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Twitter page (opens in a new tab)"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Youtube page (opens in a new tab)"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Instagram page (opens in a new tab)"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
     <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/dc26e02520.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/dc26e02520.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
