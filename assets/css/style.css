@@ -132,6 +132,55 @@ main {
     line-height: 0;
 }
 
+/* Sign up page */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup {
+    background: url('../images/signup-image.webp') 75% / cover;
+    flex-grow: 1;
+}
+
+#signup-form {
+    margin: 20px 10% auto;
+    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(60,60,60,0.6)
+}
+
+#signup-form > h2 {
+    color: #fafafa
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    width: 100%;
+    height: 25px;
+    padding: auto 5px;
+    margin: 5px auto 20px auto;
+}
+
+#radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-button {
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 15px 32px;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -290,7 +339,6 @@ hr {
     }
 }
 
-
 /* Media query for laptop screens 992px and larger */
 @media screen and (min-width: 992px) {
     #menu a:hover {
@@ -304,13 +352,14 @@ hr {
 
 /* Media query for laptop screens 1200px and wider */
 @media screen and (min-width: 1200px) {
+
     /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -322,11 +371,11 @@ hr {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
